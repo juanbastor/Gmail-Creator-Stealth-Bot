@@ -64,7 +64,7 @@
 <div align="left">
 
 ## Project Overview:
-This project automates Gmail account creation with stealth browsing and full n8n workflow orchestration. It’s built for high-scale operations like bulk account generation or profile farming, all while bypassing detection mechanisms. The system tackles tricky hurdles—browser fingerprinting, IP bans, inconsistent verifications—by combining anti-detect browsers, proxy rotation, and CAPTCHA-solving tools (like CapMonster or 2Captcha). With n8n running the show, the whole pipeline stays modular and flexible, from form filling to cookie/session handling.
+This project automates Gmail account creation with stealth browsing and full n8n workflow orchestration. It’s built for high-scale operations like bulk account generation or profile farming, all while bypassing detection mechanisms. The system tackles tricky hurdles—browser fingerprinting, IP bans, inconsistent verifications by combining anti-detect browsers, proxy rotation, and CAPTCHA-solving tools (like CapMonster or 2Captcha). With n8n running the show, the whole pipeline stays modular and flexible, from form filling to cookie/session handling.
 
 ## Core Strengths:
 - **Undetectable Automation:** Uses anti-detect browsers and randomized fingerprints to blend in like a real user.
