@@ -1,92 +1,134 @@
-<h1 align="center">Gmail Creator Stealth Bot</h1>
+# Gmail Creator Stealth Bot 🤖
 
-<div align="center">
-  <img
-    src="https://github.com/user-attachments/assets/d200549d-7613-446f-a43b-19a4117ca360"
-    alt="select device"
-    width="600px"
-  />
-</div>
+![Gmail Creator Stealth Bot](https://img.shields.io/badge/Gmail%20Creator%20Stealth%20Bot-v1.0.0-blue)
 
+Welcome to the **Gmail Creator Stealth Bot** repository! This project offers an automated solution for creating Gmail accounts with stealth-grade features. The bot utilizes anti-detect browser profiles and orchestrates workflows using n8n, ensuring that your account creation remains under the radar.
 
-<div align="center">
-  <a href="https://appilot.app/">
-    <img
-      alt="Website"
-      width="25px"
-      src="https://github.com/user-attachments/assets/8e5f3af3-b098-4c1d-980d-df9aebc680d0"
-    />
-    <code>Appilot Website</code>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://discord.gg/3CZ5muJdF2">
-    <img
-      alt="Join Our Server"
-      width="30px"
-      src="https://github.com/Zeeshanahmad4/RealEstateMate-WhatsApp-Group-Management-Bot/blob/main/discord-icon-svgrepo-com.svg"
-    />
-    <code>Join Our Server</code>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://t.me/devpilot1">
-    <img
-      alt="Contact us"
-      width="30px"
-      src="https://edent.github.io/SuperTinyIcons/images/svg/telegram.svg"
-    />
-    <code>Contact Us</code>
-  </a>
-</div>
+## Table of Contents
 
-<div align="center">
-<strong>Need a Custom Bot or Stealth Engagement Flow?</strong>
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Workflow Overview](#workflow-overview)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-<div align="center">
-  <a href="mailto:support@appilot.app">
-  <img
-    alt="Email"
-    width="30px"
-    src="https://github.com/user-attachments/assets/91c8d428-32b7-4be0-91fa-2e42c902b5b8"
-  />
-  <code>support@appilot.app</code>
-</a>
-  &nbsp;&nbsp;
-  <a href="https://cal.com/app-pilot-m8i8oo/30min">
-  <img
-    alt="Book a 30-minute Call"
-    width="30px"
-    src="https://github.com/user-attachments/assets/cd3e5c7b-3e4e-4bb3-b242-bcc20ee78f13"
-  />
-  <code>Book a 30-minute Call</code>
-</a>
-<span>
+## Features
 
-<div align="left">
+- **Automated Account Creation**: Create Gmail accounts without manual intervention.
+- **Anti-Detect Browser Profiles**: Utilize profiles that minimize detection risks.
+- **n8n Workflow Orchestration**: Integrate complex workflows seamlessly.
+- **Fingerprint Spoofing**: Change browser fingerprints to avoid detection.
+- **Proxy Rotation**: Use multiple proxies for enhanced anonymity.
+- **Human-Like Behavior**: Simulate natural user interactions.
+- **Incognito Mode**: Operate in a secure environment.
+- **Multi-Login Support**: Manage multiple accounts effortlessly.
 
-## Project Overview:
-This project automates Gmail account creation with stealth browsing and full n8n workflow orchestration. It’s built for high-scale operations like bulk account generation or profile farming, all while bypassing detection mechanisms. The system tackles tricky hurdles—browser fingerprinting, IP bans, inconsistent verifications by combining anti-detect browsers, proxy rotation, and CAPTCHA-solving tools (like CapMonster or 2Captcha). With n8n running the show, the whole pipeline stays modular and flexible, from form filling to cookie/session handling.
+## Installation
 
-## Core Strengths:
-- **Undetectable Automation:** Uses anti-detect browsers and randomized fingerprints to blend in like a real user.
-- **Seamless Orchestration with n8n:** Each step—proxy allocation, CAPTCHA solving, form submission—is modular and programmable.
-- **Scalable by Design:** Built for spawning and maintaining hundreds of Google accounts, without getting flagged.
+To get started with the Gmail Creator Stealth Bot, follow these steps:
 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/juanbastor/Gmail-Creator-Stealth-Bot.git
+   ```
 
-## Features List:
-| Feature                     | Description                                                                |
-| --------------------------- | -------------------------------------------------------------------------- |
-| Proxy Integration           | Automatically rotates IPs to bypass region-based or volume-based blocks.   |
-| Fingerprint Spoofing        | Randomizes browser fingerprints for every session using anti-detect tools. |
-| CAPTCHA Handling            | Supports CapMonster, 2Captcha, or manual solving with fallback mechanisms. |
-| Cookie & Session Management | Saves sessions to reduce verification frequency and re-use warm accounts.  |
-| n8n Integration             | Every automation step is controlled via n8n workflows and webhooks.        |
-| Headless Browser Control    | Uses Puppeteer, Playwright, or Selenium with stealth plugins.              |
-| Multi-Profile Support       | Manages isolated environments using Multilogin, GoLogin, or Incogniton.    |
-| Email Warmup Ready          | Easily extendable with warmup sequences using task queues.                 |
-| Retry & Logging Logic       | Full logging and retry handling for robustness in production workflows.    |
+2. **Navigate to the Directory**:
+   ```bash
+   cd Gmail-Creator-Stealth-Bot
+   ```
 
+3. **Install Dependencies**:
+   Use npm or yarn to install the required packages:
+   ```bash
+   npm install
+   ```
 
-## Key Stats:
-- **Automation Accuracy:** 98%
-- **Session Stability:** 24/7 runtime supported
-- **Detection Avoidance Rate:** 99% human-like behavior
+4. **Download the Latest Release**:
+   Visit the [Releases](https://github.com/juanbastor/Gmail-Creator-Stealth-Bot/releases) section to download the latest release. Follow the instructions provided in the release notes to execute the bot.
+
+## Usage
+
+To run the bot, execute the following command in your terminal:
+
+```bash
+node index.js
+```
+
+### Configuration
+
+Before running the bot, you may need to configure some settings. Open the `config.json` file and adjust the parameters according to your needs. Here are some key configurations:
+
+- **proxy**: Set your proxy server details.
+- **browserProfile**: Choose your preferred anti-detect profile.
+- **gmailAccountDetails**: Fill in the necessary account details for creation.
+
+### Example Configuration
+
+```json
+{
+  "proxy": "http://your-proxy:port",
+  "browserProfile": "stealth-profile",
+  "gmailAccountDetails": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "username": "john.doe",
+    "password": "your-password"
+  }
+}
+```
+
+## Workflow Overview
+
+The Gmail Creator Stealth Bot operates through a series of orchestrated workflows. Here's a simplified overview:
+
+1. **Initialize Browser**: The bot launches an anti-detect browser.
+2. **Set Proxy**: It connects through a proxy to mask your IP.
+3. **Create Account**: The bot fills in the necessary details and submits the form.
+4. **Verification**: It handles any verification steps required by Gmail.
+5. **Store Credentials**: Finally, it saves the created account details for future access.
+
+## Technologies Used
+
+- **Node.js**: The backend framework for executing the bot.
+- **Playwright**: For browser automation and interaction.
+- **n8n**: For workflow orchestration.
+- **Proxy Services**: To ensure anonymity during account creation.
+- **Fingerprint Spoofing Libraries**: To modify browser fingerprints.
+
+## Contributing
+
+We welcome contributions to improve the Gmail Creator Stealth Bot. If you want to contribute, please follow these steps:
+
+1. **Fork the Repository**: Click on the "Fork" button on the top right corner of the repository page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- **Juan Bastor**: [juanbastor@example.com](mailto:juanbastor@example.com)
+- **GitHub**: [juanbastor](https://github.com/juanbastor)
+
+---
+
+Explore the power of automation with the Gmail Creator Stealth Bot. For the latest updates, visit the [Releases](https://github.com/juanbastor/Gmail-Creator-Stealth-Bot/releases) section.
